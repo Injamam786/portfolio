@@ -1,0 +1,522 @@
+@import 'https://drive.google.com/uc?id=1bnTxC5sA2cZUqa5Lhx3iGI9mhGWRqbbK';
+
+:root{
+    --primary:#71DB77;
+    --sec:#161616;
+    --pure:#FFFFFF;
+    --letters:#898989;
+    --light:#F2F2F2;
+    --cards:#070606;
+}
+
+header .container .logo img{
+    width: 360px;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    background: var(--sec);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.poster{
+    padding: 3rem 0;
+}
+
+.poster .left img{
+    width: 500px;
+}
+
+.poster .right{
+    color: var(--pure);
+}
+
+.poster .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.poster .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.poster .right h1 span{
+    color: var(--primary);
+}
+
+.poster .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.poster .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .poster1{
+    height: 680px;
+    padding: 20%;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--letters);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--sec);
+    color: var(--pure);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social a:hover{
+    background: var(--primary);
+} 
+
+.sec-heading{
+    color: var(--cards);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.sec-heading + p{
+    color: var(--letters);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+.sec-heading span{
+    color: var(--primary);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--letters);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--sec);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/freelancer2.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+}
+
+section.contact .card-wrapper .card a{
+    text-decoration: none;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--cards);
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--letters);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 1.1rem;
+}
+
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background: var(--sec);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 250px;
+}
+
+footer .footer-socials a{
+    margin-right: 1rem;
+    color: var(--pure);
+    text-decoration: none;
+}
+
+footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+
+footer .copyright{
+    color: var(--letters);
+}
+
+
+
+.main-wrapper{
+    position: relative;
+}
+.main-wrapper .mobile-poster img{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 11;
+    width: 300px;
+    display: none;
+    
+
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--sec);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.mobile-nav img{
+    width: 220px;
+    margin-left: -1rem;
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--light);
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--light);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.mobile-nav .mobile-btn{
+    margin-top: 1rem;
+}
+
+@media (max-width:1080px){
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+    .main-wrapper .mobile-poster img{
+        display: block;
+    }
+    .poster .left img{
+        width: 300px;
+    }
+    .poster .right h1{
+        font-size: 3rem;
+    }
+    .poster{
+        padding-top: 10rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+    section.about .poster1 {
+        height: 560px;
+        padding: 20%;
+    }
+}
+
+@media (max-width: 576px){
+    .poster{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+    .poster .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .main-wrapper .mobile-poster img {
+        position: absolute;
+        top: 30px;
+        left: 8px;
+        z-index: 11;
+        width: 240px;
+    }
+    .poster .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 4rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column-reverse;
+    }
+    .about .left{
+        text-align: center;
+        margin-top: -2rem;
+    }
+    .about .left .social{
+        justify-content: center;
+    }
+    section{
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.freelancer h1{
+        line-height: 1.2;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        padding-bottom: 6rem;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
